@@ -1,0 +1,76 @@
+{
+  "name": "multi-step-form",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "multi-step-form",
+  "sourceRoot": "apps/multi-step-form/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/multi-step-form",
+        "index": "apps/multi-step-form/src/index.html",
+        "browser": "apps/multi-step-form/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/multi-step-form/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/multi-step-form/src/favicon.ico",
+          "apps/multi-step-form/src/assets"
+        ],
+        "styles": ["apps/multi-step-form/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "multi-step-form:build:production"
+        },
+        "development": {
+          "buildTarget": "multi-step-form:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "multi-step-form:build"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "multi-step-form:build",
+        "staticFilePath": "dist/apps/multi-step-form/browser"
+      }
+    }
+  }
+}
