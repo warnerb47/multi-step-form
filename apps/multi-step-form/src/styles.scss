@@ -13,3 +13,10 @@
     --secondary-lightest: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
 }
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(assets/fonts/Ubuntu-Bold.ttf) format('truetype');
+    src: url(assets/fonts/Ubuntu-Medium.ttf) format('truetype');
+    src: url(assets/fonts/Ubuntu-Regular.ttf) format('truetype');
+}
