@@ -1,0 +1,30 @@
+.thank-you {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10vh;
+
+    .icon {
+        img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    .title {
+        margin-top: 1.5rem;
+        color: var(--primary);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    p {
+        margin-top: 0.5rem;
+        padding-left: 0.80rem;
+        padding-right: 0.80rem;
+        color: var(--secondary);
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
