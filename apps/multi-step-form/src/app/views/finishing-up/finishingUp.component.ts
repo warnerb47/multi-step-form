@@ -6,6 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './finishingUp.component.html',
-  styleUrl: './finishingUp.component.css',
+  styleUrl: './finishingUp.component.scss',
 })
 export class FinishingUpComponent {}

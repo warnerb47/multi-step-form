@@ -1,0 +1,91 @@
+.finishing-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    &>*+* {
+        margin-top: 2rem;
+    }
+
+    .top {
+        &>*+* {
+            margin-top: 1rem;
+        }
+        .title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .description {
+            color: var(--secondary);
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .content {
+        width: 100%;
+        .card {
+            padding: 1rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: var(--secondary-lightest);
+            border-radius: 10px;
+        }
+        .item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            .label {
+                color: var(--secondary);
+            }
+
+            .price {
+                color: var(--primary);
+                font-weight: 500;
+            }
+
+
+            &.arcade {
+                border-bottom: 1px solid var(--secondary-light);
+                .label {
+                    .title {
+                        color: var(--primary);
+                        font-weight: 700;
+                    }
+                }
+                .price {
+                    color: var(--primary);
+                    font-weight: 700;
+                }
+
+                .change {
+                    color: var(--secondary);
+                    font-weight: 500;
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        .total {
+            padding: 1rem;
+            .item {
+                .price{
+                    color: var(--primary-dark);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+}
