@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary: hsl(213, 96%, 18%);
+    --primary-dark: hsl(243, 100%, 62%);
+    --primary-light: hsl(228, 100%, 84%);
+    --primary-lighter: hsl(206, 94%, 87%);
+    --danger: hsl(354, 84%, 57%);
+
+
+    --secondary: hsl(231, 11%, 63%);
+    --secondary-light: hsl(229, 24%, 87%);
+    --secondary-lighter: hsl(217, 100%, 97%);
+    --secondary-lightest: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
