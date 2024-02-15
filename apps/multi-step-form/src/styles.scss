@@ -11,7 +11,7 @@
     --secondary-light: hsl(229, 24%, 87%);
     --secondary-lighter: hsl(217, 100%, 97%);
     --secondary-lightest: hsl(231, 100%, 99%);
-    --White: hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
 }
 
 @font-face {
@@ -27,4 +27,8 @@
     font-size: 15px;
     font-family: Ubuntu, 'Poppins', sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-lightest);
 }
