@@ -1,0 +1,12 @@
+<div class="add-on" [ngClass]="{'active': addOn.active}">
+    <div class="label">
+        <div class="icon" [ngClass]="{'active': addOn.active}">
+            <img src="assets/images/icon-checkmark.svg" alt="check-mark">
+        </div>
+        <div class="info">
+            <div class="title">{{addOn.title}}</div>
+            <div class="description">{{addOn.description}}</div>
+        </div>
+    </div>
+    <div class="price">{{addOn.price}}</div>
+</div>
