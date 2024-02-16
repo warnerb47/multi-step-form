@@ -1,4 +1,4 @@
-.finishing-up {
+.pick-add-ons {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -15,7 +15,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 2rem;
+        padding: 2rem 1rem;
 
         &>*+* {
             margin-top: 2rem;
@@ -42,67 +42,55 @@
         .content {
             width: 100%;
 
-            .resume {
-                padding: 1rem;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                background-color: var(--secondary-lightest);
-                border-radius: 10px;
+            &>*+*{
+                margin-top: 1rem;
             }
 
-            .item {
-                width: 100%;
+            .add-on {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
+                border: 1px solid var(--secondary-light);
+                border-radius: 10px;
+                padding: 1rem;
+
+                &.active {
+                    border-color: var(--primary-dark);
+                }
 
                 .label {
-                    color: var(--secondary);
-                }
+                    display: flex;
+                    align-items: center;
 
-                .price {
-                    color: var(--primary);
-                    font-weight: 500;
-                }
+                    &>*+*{
+                        margin-left: 1rem;
+                    }
 
+                    .icon {
+                        border: 1px solid var(--secondary-light);
+                        padding: 0.20rem 0.25rem;
+                        border-radius: 3px;
 
-                &.arcade {
-                    border-bottom: 1px solid var(--secondary-light);
-
-                    .label {
+                        &.active {
+                            background-color: var(--primary-dark);
+                            border-color: var(--primary-dark);
+                        }
+                    }
+                    .info {
                         .title {
                             color: var(--primary);
                             font-weight: 700;
                         }
-                    }
-
-                    .price {
-                        color: var(--primary);
-                        font-weight: 700;
-                    }
-
-                    .change {
-                        color: var(--secondary);
-                        font-weight: 500;
-                        text-decoration: underline;
+                        .description {
+                            color: var(--secondary);
+                            font-size: 0.875rem;
+                            line-height: 1.25rem;
+                        }
                     }
                 }
 
-            }
-
-            .total {
-                padding: 1rem;
-
-                .item {
-                    .price {
-                        color: var(--primary-dark);
-                        font-weight: 700;
-                    }
+                .price {
+                    color: var(--primary-dark);
                 }
             }
         }
@@ -128,9 +116,9 @@
             &.go-back {
                 padding: 0;
             }
-            &.confirm {
-                background-color: var(--primary-dark);
-                color: var(--white);
+            &.next {
+                background-color: var(--primary);
+                color: var(--secondary-light);
             }
         }
     }

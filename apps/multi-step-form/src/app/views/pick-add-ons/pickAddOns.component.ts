@@ -6,6 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './pickAddOns.component.html',
-  styleUrl: './pickAddOns.component.css',
+  styleUrl: './pickAddOns.component.scss',
 })
 export class PickAddOnsComponent {}
