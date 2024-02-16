@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AddOn } from '../../core/models/addOn.model';
 import { AdOnComponent } from './ad-on/ad-on.component';
+import { CardComponent } from '../components/card.component';
 
 @Component({
   selector: 'multi-step-form-pick-add-ons',
   standalone: true,
-  imports: [ CommonModule, AdOnComponent ],
+  imports: [ CommonModule, AdOnComponent, CardComponent ],
   templateUrl: './pickAddOns.component.html',
   styleUrl: './pickAddOns.component.scss',
 })
