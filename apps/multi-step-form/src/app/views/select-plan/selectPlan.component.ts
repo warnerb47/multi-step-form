@@ -6,6 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './selectPlan.component.html',
-  styleUrl: './selectPlan.component.css',
+  styleUrl: './selectPlan.component.scss',
 })
 export class SelectPlanComponent {}
