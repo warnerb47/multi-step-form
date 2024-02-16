@@ -1,17 +1,13 @@
 <div class="select-plan">
-    <div class="card">
-        <div class="top">
-            <div class="title">Select your plan</div>
-            <div class="description">You have the option of monthly or yearly billing.</div>
-        </div>
+    <multi-step-form-card title="Select your plan" description="You have the option of monthly or yearly billing.">
         <div class="content">
             <div class="plans">
                 @for (plan of plans; track $index) {
-                    <div class="plan">
-                        <multi-step-form-plan [plan]="plan"></multi-step-form-plan>
-                    </div>
+                <div class="plan">
+                    <multi-step-form-plan [plan]="plan"></multi-step-form-plan>
+                </div>
                 }@empty {
-                    <div>Liste vide</div>
+                <div>Liste vide</div>
                 }
             </div>
             <div class="duration">
@@ -20,7 +16,7 @@
                 <div class="option">Yearly</div>
             </div>
         </div>
-    </div>
+    </multi-step-form-card>
     <div class="footer">
         <div class="btn go-back">Go Back</div>
         <div class="btn next">Next Step</div>
