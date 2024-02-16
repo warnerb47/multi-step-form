@@ -7,6 +7,15 @@
     border: 1px solid var(--secondary-light);
     padding: 1rem;
 
+    &.active {
+        border-color: var(--primary-dark);
+        background-color: var(--secondary-lightest);
+    }
+
+    &>*+*{
+        margin-left: 1rem;
+    }
+
     .label {
         &>*+*{
             margin-top: 0.5rem;
@@ -21,12 +30,4 @@
         }
     }
 
-    &.active {
-        border-color: var(--primary-dark);
-        background-color: var(--secondary-lightest);
-    }
-
-    &>*+*{
-        margin-left: 1rem;
-    }
 }

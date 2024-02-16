@@ -6,34 +6,13 @@
         </div>
         <div class="content">
             <div class="plans">
-                <multi-step-form-plan></multi-step-form-plan>
-                <!-- <div class="plan active">
-                    <div class="icon">
-                        <img src="assets/images/icon-arcade.svg" alt="icon">
+                @for (plan of plans; track $index) {
+                    <div class="plan">
+                        <multi-step-form-plan [plan]="plan"></multi-step-form-plan>
                     </div>
-                    <div class="label">
-                        <div class="title">Arcade</div>
-                        <div class="price">$9/mo</div>
-                    </div>
-                </div> -->
-                <div class="plan">
-                    <div class="icon">
-                        <img src="assets/images/icon-advanced.svg" alt="icon">
-                    </div>
-                    <div class="label">
-                        <div class="title">Advanced</div>
-                        <div class="price">$12/mo</div>
-                    </div>
-                </div>
-                <div class="plan">
-                    <div class="icon">
-                        <img src="assets/images/icon-pro.svg" alt="icon">
-                    </div>
-                    <div class="label">
-                        <div class="title">Pro</div>
-                        <div class="price">$15/mo</div>
-                    </div>
-                </div>
+                }@empty {
+                    <div>Liste vide</div>
+                }
             </div>
             <div class="duration">
                 <div class="option active">Monthly</div>
