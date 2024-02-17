@@ -5,40 +5,12 @@
     align-items: center;
     height: 100%;
 
-    .card {
-        background-color: var(--white);
-        filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-        border-radius: 10px;
-        width: 90%;
-        margin-top: -6vh;
+    multi-step-form-card{
+        width: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 2rem 1rem;
-
-        &>*+* {
-            margin-top: 2rem;
-        }
-
-        .top {
-            &>*+* {
-                margin-top: 1rem;
-            }
-
-            .title {
-                color: var(--primary);
-                font-size: 1.5rem;
-                font-weight: 700;
-            }
-
-            .description {
-                color: var(--secondary);
-                font-size: 1rem;
-                line-height: 1.5rem;
-            }
-        }
-
+        align-items: center;
         .content {
             width: 100%;
             form{
@@ -71,8 +43,8 @@
                 }
             }
         }
-
     }
+
 
     .footer {
         display: flex;
