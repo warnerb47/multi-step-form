@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { PlanComponent } from './plan/plan.component';
 import { Plan } from '../../core/models/plan.model';
 import { CardComponent } from '../components/card.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'multi-step-form-select-plan',
   standalone: true,
-  imports: [ CommonModule, PlanComponent, CardComponent ],
+  imports: [ CommonModule, PlanComponent, CardComponent, RouterModule ],
   templateUrl: './selectPlan.component.html',
   styleUrl: './selectPlan.component.scss',
 })
