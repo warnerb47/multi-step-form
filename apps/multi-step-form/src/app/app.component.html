@@ -1,10 +1,40 @@
 <main>
     <header>
-        <nav>
+        <nav aria-label="mobile" class="mobile">
             <div routerLink="personal-info" routerLinkActive="active" class="link">1</div>
             <div routerLink="select-plan" routerLinkActive="active" class="link">2</div>
             <div routerLink="pick-add-ons" routerLinkActive="active" class="link">3</div>
             <div routerLink="finishing-up" routerLinkActive="active" class="link">4</div>
+        </nav>
+        <nav aria-label="desktop" class="desktop">
+            <div routerLink="personal-info" class="link">
+                <div class="index" routerLinkActive="active">1</div>
+                <div class="label">
+                    <div class="step">Step 1</div>
+                    <div class="title">Your info</div>
+                </div>
+            </div>
+            <div routerLink="select-plan" class="link">
+                <div class="index" routerLinkActive="active">2</div>
+                <div class="label">
+                    <div class="step">Step 2</div>
+                    <div class="title">Select plan</div>
+                </div>
+            </div>
+            <div routerLink="pick-add-ons" class="link">
+                <div class="index" routerLinkActive="active">3</div>
+                <div class="label">
+                    <div class="step">STEP 3</div>
+                    <div class="title">Add-ons</div>
+                </div>
+            </div>
+            <div routerLink="finishing-up" class="link">
+                <div class="index" routerLinkActive="active">4</div>
+                <div class="label">
+                    <div class="step">STEP 4</div>
+                    <div class="title">Summary</div>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="content">
