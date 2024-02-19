@@ -51,6 +51,9 @@ main {
     main{
         height: 80vh;
         display: flex;
+        padding: 1rem;
+        background-color: var(--white);
+        border-radius: 10px;
         header {
             height: 100%;
             width: 190px;
