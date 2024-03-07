@@ -44,3 +44,12 @@
     }
 
 }
+
+@media (min-width: 640px) {
+    .thank-you {
+        .card {
+            margin-top: 0;
+            height: 100%;
+        }
+    }
+}

@@ -8,6 +8,7 @@ main {
         display: flex;
         justify-content: center;
         padding-top: 4vh;
+        
 
         nav {
 
@@ -50,16 +51,23 @@ main {
 @media (min-width: 640px) {
     main{
         height: 80vh;
+        width: 80vw;
         display: flex;
+        justify-content: center;
         padding: 1rem;
         background-color: var(--white);
         border-radius: 10px;
+
         header {
+            flex: 0.3;
             height: 100%;
-            width: 190px;
+            padding-top: 4vh;
+            padding-left: 1.5rem;
             background-image: url('../assets/images/bg-sidebar-desktop.svg');
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
+            border-radius: 10px;
+
 
             nav {
 
@@ -70,7 +78,7 @@ main {
                 &.desktop {
                     display: flex;
                     flex-direction: column;
-                    width: 70%;
+                    width: 100%;
                     
                     &> *+* {
                         margin-top: 1.5rem;
@@ -123,5 +131,11 @@ main {
             }
 
         }
+       
+        .content {
+            flex: 0.7;
+            height: 100%;
+            background-color: aqua;
+        } 
     }
 }
