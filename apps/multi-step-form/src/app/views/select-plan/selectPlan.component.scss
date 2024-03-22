@@ -79,3 +79,23 @@
         }
     }
 }
+
+
+@media (min-width: 640px) {
+    .select-plan {
+        multi-step-form-card {
+            .content {
+                &>*+*{
+                    margin-top: 1rem;
+                }
+            }
+
+            .plans {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+        }
+    }
+}
