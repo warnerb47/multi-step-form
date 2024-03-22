@@ -8,6 +8,7 @@
 
     &.active {
         border-color: var(--primary-dark);
+        background-color: var(--secondary-lightest);
     }
 
     .label {
@@ -29,6 +30,10 @@
             }
         }
         .info {
+
+            &>*+*{
+                margin-top: 1vh;
+            }
             .title {
                 color: var(--primary);
                 font-weight: 700;
@@ -43,5 +48,6 @@
 
     .price {
         color: var(--primary-dark);
+        font-size: 0.85rem;
     }
 }
