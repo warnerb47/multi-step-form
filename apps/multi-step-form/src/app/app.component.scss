@@ -1,5 +1,6 @@
 main {
     height: 100vh;
+
     header {
         height: 18vh;
         background-image: url('../assets/images/bg-sidebar-mobile.svg');
@@ -8,7 +9,7 @@ main {
         display: flex;
         justify-content: center;
         padding-top: 4vh;
-        
+
 
         nav {
 
@@ -21,10 +22,10 @@ main {
                 align-items: flex-start;
                 justify-content: center;
 
-                &> *+* {
+                &>*+* {
                     margin-left: 1rem;
                 }
-    
+
                 .link {
                     border: 1px solid var(--white);
                     color: var(--white);
@@ -32,24 +33,25 @@ main {
                     padding: 0.5rem 0.7rem;
                     font-size: 0.85rem;
                     font-weight: bold;
-    
+
                     &.active {
                         background-color: var(--primary-lighter);
                         border-color: var(--primary-lighter);
                         color: var(--primary);
                     }
                 }
-    
+
             }
         }
     }
+
     .content {
         height: calc(100vh - 18vh);
     }
 }
 
 @media (min-width: 640px) {
-    main{
+    main {
         height: 80vh;
         width: 80vw;
         display: flex;
@@ -79,8 +81,8 @@ main {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
-                    
-                    &> *+* {
+
+                    &>*+* {
                         margin-top: 1.5rem;
                     }
 
@@ -91,10 +93,10 @@ main {
                         color: var(--white);
                         text-transform: uppercase;
 
-                        &> *+* {
+                        &>*+* {
                             margin-left: 1rem;
                         }
-                        
+
                         .index {
                             border: 1px solid var(--white);
                             color: var(--white);
@@ -102,7 +104,7 @@ main {
                             padding: 0.5rem 0.7rem;
                             font-size: 0.85rem;
                             font-weight: bold;
-            
+
                             &.active {
                                 background-color: var(--primary-lighter);
                                 border-color: var(--primary-lighter);
@@ -116,10 +118,11 @@ main {
                             justify-content: start;
                             flex-grow: 1;
 
-                            .step{
+                            .step {
                                 font-size: 0.80rem;
                                 color: var(--secondary);
                             }
+
                             .title {
                                 font-size: 0.90rem;
                             }
@@ -131,10 +134,38 @@ main {
             }
 
         }
-       
+
         .content {
             flex: 0.7;
             height: 100%;
-        } 
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 75vw;
+
+        header {
+            flex: 0.3;
+        }
+
+        .content {
+            flex: 0.7;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        width: 70vw;
+
+        header {
+            flex: 0.25;
+        }
+
+        .content {
+            flex: 0.75;
+        }
     }
 }
